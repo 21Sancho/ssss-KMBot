@@ -6,7 +6,7 @@ module.exports = {
 // This is the name of the action displayed in the editor.
 //---------------------------------------------------------------------
 
-name: "Dołącz na Kanał Głosowy",
+name: "Join Voice Channel",
 
 //---------------------------------------------------------------------
 // Action Section
@@ -14,7 +14,7 @@ name: "Dołącz na Kanał Głosowy",
 // This is the section the action will fall into.
 //---------------------------------------------------------------------
 
-section: "Muzyka",
+section: "Audio Control",
 
 //---------------------------------------------------------------------
 // Action Subtitle
@@ -58,7 +58,7 @@ html: function(isEvent, data) {
 	return `
 <div>
 	<div style="float: left; width: 45%;">
-		Kanał Głosowy:<br>
+		Voice Channel:<br>
 		<select id="channel" class="round" onchange="glob.voiceChannelChange(this, 'varNameContainer')">
 			${data.voiceChannels[isEvent ? 1 : 0]}
 		</select>
